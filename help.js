@@ -29,6 +29,7 @@ class HelpSystem {
                     <h3>🔄 Dataset Switching</h3>
                     <p>Use the dataset buttons to switch between different data sources. Each dataset is displayed as a separate table:</p>
                     <div class="help-example">⚖️ Legal Cases (data1) - Court case management data
+                    🔗Links (data3) - Hyperlink management data
 📊 Projects (data4) - Project management data  
 👥 Employees (data5) - Employee management data</div>
                 </div>
@@ -109,12 +110,11 @@ WHERE Bench IN 'Bench-1,Bench-2'
 WHERE Date >= '16-01-2025' AND Vol = 3
 WHERE CaseNo IS NOT NULL</div>
 
-                    <h4>Examples for Projects Dataset:</h4>
-                    <div class="help-example">WHERE Status = 'Active'
-WHERE Amount > 50000
-WHERE Name LIKE 'Project'
-WHERE Status IN 'Active,Pending'
-WHERE Amount >= 75000 AND Status != 'Completed'</div>
+<h4>Examples for Link Dataset:</h4>
+<div class="help-example">WHERE Name = 'Elephant Killing'
+WHERE Remark > 'Ecosystem Balancing'
+WHERE Name LIKE 'Link'</div>
+
 
                     <h4>Examples for Employees Dataset:</h4>
                     <div class="help-example">WHERE Department = 'Engineering'
@@ -249,6 +249,15 @@ F1 - Open this help dialog</div>
                     "WHERE Bench = 'Bench-1'",
                     "WHERE Vol > 3",
                     "WHERE Party1 LIKE 'Smith'"
+                ]
+            },
+                       'data3': {
+                name: 'Link',
+                columns: ['ID', 'Name', 'Remark', 'Link'],
+                examples: [
+                    "WHERE Name = 'Elephant Killing'",
+                    "WHERE Remark > Ecosystem Balancing'",
+                    "WHERE Name LIKE 'Link'"
                 ]
             },
             'data4': {
