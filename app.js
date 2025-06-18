@@ -28,7 +28,7 @@ class DataApp {
 
     loadData() {
         // Define available datasets
-        const datasets = ['data1', 'data4', 'data5'];
+        const datasets = ['data1', 'data3', 'data4', 'data5'];
         
         // Parse CSV data for each dataset
         datasets.forEach(dataset => {
