@@ -285,7 +285,7 @@ class DataApp {
         return `
             <div class="container">
                 <div class="header">
-                    <h1>🗃️ Advanced Data Management System</h1>
+                    <h1>🗃️संवैधानिक इजलास फैसला व्यवस्थापन प्रणाली (CBDMS) </h1>
                     <p>Multi-dataset management with global search and SQL-like filtering</p>
                 </div>
 

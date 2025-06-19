@@ -28,7 +28,7 @@ class HelpSystem {
                 <div class="help-section">
                     <h3>🔄 Dataset Switching</h3>
                     <p>Use the dataset buttons to switch between different data sources. Each dataset is displayed as a separate table:</p>
-                    <div class="help-example">⚖️ Legal Cases (data1) - Court case management data
+                    <div class="help-example">⚖️ CBcaseRecord (data1) - Court case management data
                     🔗Links (data3) - Hyperlink management data
 📊 Projects (data4) - Project management data  
 👥 Employees (data5) - Employee management data</div>
@@ -102,7 +102,7 @@ STARTS WITH - text starts with value
 ENDS WITH - text ends with value
 IS NULL / IS NOT NULL - check for empty values</div>
 
-                    <h4>Examples for Legal Cases Dataset:</h4>
+                    <h4>Examples for CBcaseRecord Dataset:</h4>
                     <div class="help-example">WHERE Bench = 'Bench-1'
 WHERE Vol > 3
 WHERE Party1 LIKE 'Smith'
@@ -243,7 +243,7 @@ F1 - Open this help dialog</div>
     getDatasetHelp(datasetName) {
         const helpContent = {
             'data1': {
-                name: 'Legal Cases',
+                name: 'CBcaseRecord',
                 columns: ['CaseNo', 'DNo', 'NKP', 'Vol', 'Date', 'Case Name', 'Party1', 'Party 2', 'Bench', 'Remark1-5'],
                 examples: [
                     "WHERE Bench = 'Bench-1'",
