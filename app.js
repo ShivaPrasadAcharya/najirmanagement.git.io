@@ -286,7 +286,7 @@ class DataApp {
             <div class="container">
                 <div class="header">
                     <h1>🗃️संवैधानिक इजलास फैसला व्यवस्थापन प्रणाली (CBDMS) </h1>
-                    <p>Multi-dataset management with global search and SQL-like filtering</p>
+                    <p>developed by: Shiva Prasad Acharya,  Supreme Court (2082)</p>
                 </div>
 
                 <div class="sticky-search">
