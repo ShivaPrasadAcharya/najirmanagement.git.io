@@ -243,7 +243,7 @@ F1 - Open this help dialog</div>
     getDatasetHelp(datasetName) {
         const helpContent = {
             'data1': {
-                name: 'CBcaseRecord',
+                name: 'Projects',
                 columns: ['CaseNo', 'DNo', 'NKP', 'Vol', 'Date', 'Case Name', 'Party1', 'Party 2', 'Bench', 'Remark1-5'],
                 examples: [
                     "WHERE Bench = 'Bench-1'",
@@ -261,7 +261,7 @@ F1 - Open this help dialog</div>
                 ]
             },
             'data4': {
-                name: 'Projects',
+                name: 'CBcaseRecord',
                 columns: ['ID', 'Name', 'Amount', 'Status', 'Notes'],
                 examples: [
                     "WHERE Status = 'Active'",
