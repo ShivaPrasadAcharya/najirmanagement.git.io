@@ -5,10 +5,10 @@ var data4 = `सिनं,निनं,नेकाप,अङ्क,मिति
 `;
 
 // Dataset metadata
-var data1Info = {
-    name: "CBcaseRecord",
-    description: "Court case management system data",
-    emoji: "⚖️",
+var data4Info = {
+    name: "Projects",
+    description: "Project management system data",
+    emoji: "📊",
     columns: 14,
     primaryKey: "CaseNo"
 };

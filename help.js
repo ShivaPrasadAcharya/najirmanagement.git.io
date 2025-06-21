@@ -18,10 +18,11 @@ class HelpSystem {
         document.body.appendChild(modal);
         this.modal = modal;
     }
-
+// Function to generate the help content dynamically
     getHelpContent() {
         return `
-            <div class="modal-content">
+        
+        <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2 style="color: #667eea; margin-bottom: 20px;">📚 Help & Documentation</h2>
                 
@@ -243,6 +244,15 @@ F1 - Open this help dialog</div>
     getDatasetHelp(datasetName) {
         const helpContent = {
             'data1': {
+                name: 'CBcaseRecord',
+                columns: ['ID', 'Name', 'Amount', 'Status', 'Notes'],
+                examples: [
+                    "WHERE Status = 'Active'",
+                    "WHERE Amount > 50000",
+                    "WHERE Name LIKE 'Project'"
+                ],
+            
+            'data2': {
                 name: 'Projects',
                 columns: ['CaseNo', 'DNo', 'NKP', 'Vol', 'Date', 'Case Name', 'Party1', 'Party 2', 'Bench', 'Remark1-5'],
                 examples: [
@@ -260,14 +270,7 @@ F1 - Open this help dialog</div>
                     "WHERE Name LIKE 'Link'"
                 ]
             },
-            'data4': {
-                name: 'CBcaseRecord',
-                columns: ['ID', 'Name', 'Amount', 'Status', 'Notes'],
-                examples: [
-                    "WHERE Status = 'Active'",
-                    "WHERE Amount > 50000",
-                    "WHERE Name LIKE 'Project'"
-                ]
+            
             },
             'data5': {
                 name: 'Employees',

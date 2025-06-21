@@ -28,7 +28,7 @@ class DataApp {
 
     loadData() {
         // Define available datasets
-        const datasets = ['data1', 'data3', 'data4', 'data5'];
+        const datasets = ['data1','data2', 'data3', 'data4', 'data5'];
         
         // Parse CSV data for each dataset
         datasets.forEach(dataset => {
@@ -717,6 +717,12 @@ class DataApp {
         // Global search
         if (e.target.classList.contains('search-input')) {
             this.searchTerm = e.target.value;
+
+            // Save cursor position before render
+            const input = e.target;
+            const selectionStart = input.selectionStart;
+            const selectionEnd = input.selectionEnd;
+
             this.debounce(() => {
                 if (this.showMultipleDatasets) {
                     this.applyFiltersToAllDatasets();
@@ -724,6 +730,18 @@ class DataApp {
                     this.applyFiltersToCurrentDataset();
                 }
                 this.render();
+
+                // Restore cursor position after render
+                const newInput = document.querySelector('.search-input');
+                if (newInput) {
+                    newInput.focus();
+                    // Restore selection if possible
+                    try {
+                        newInput.setSelectionRange(selectionStart, selectionEnd);
+                    } catch (err) {
+                        // Ignore if setSelectionRange fails
+                    }
+                }
             }, 300)();
         }
 
